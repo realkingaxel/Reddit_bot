@@ -7,9 +7,6 @@ Automates image posts to Reddit at **random times within a daily window**. You p
 * `images/` — folder of images
 
 The bot picks a **random title + image + subreddit** for each scheduled time and posts via the Reddit API.
-
-> ⚠️ **Important:** Do **not** commit credentials. This repo previously tracked `reddit_credentials.txt`. Use `.gitignore` and rotate any secrets that may have been exposed.
-
 ---
 
 ## ✨ Features
@@ -26,28 +23,9 @@ The bot picks a **random title + image + subreddit** for each scheduled time and
 ## 🧰 Requirements
 
 * Python **3.9+**
-* Packages (see `requirements.txt`):
+* Packages 
 
   * `praw`, `requests`, `schedule`, `pyfiglet`, `colorama`
-
-Install dependencies:
-
-```bash
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-If you don’t have a `requirements.txt`, create one like:
-
-```txt
-praw
-requests
-schedule
-pyfiglet
-colorama
-```
-
----
 
 ## 🔑 Credentials
 
@@ -166,7 +144,7 @@ If secrets were ever pushed, rewrite history (e.g., with `git filter-repo` or BF
 
 ## 🪪 License
 
-MIT (or your preference). Update the `LICENSE` file accordingly.
+MIT
 
 ---
 
